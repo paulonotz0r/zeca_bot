@@ -1,1 +1,1 @@
-web: ruby ./bin/zeca_bot.rb
+console: ruby ./bin/zeca_bot.rb
