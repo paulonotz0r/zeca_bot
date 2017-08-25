@@ -1,1 +1,1 @@
-worker: ruby bin/zeca_bot.rb
+web: ruby bin/zeca_bot.rb
