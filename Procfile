@@ -1,1 +1,1 @@
-console: ruby ./bin/zeca_bot.rb
+console: console `ruby bin/zeca_bot.rb`
