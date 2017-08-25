@@ -1,3 +1,4 @@
-source 'https://rubygems.org' do
-    gem 'telegram-bot-ruby'
-end
+source "https://rubygems.org"
+ruby "2.4.1" 
+gem 'telegram-bot-ruby'
+
