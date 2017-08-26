@@ -1,1 +1,1 @@
-web: bundle exec ruby bin/zeca_bot.rb -p $PORT 
+bot: ruby bin/zeca_bot.rb
