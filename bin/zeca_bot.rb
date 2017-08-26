@@ -2,6 +2,11 @@ require 'telegram/bot'
 
 token = '353888167:AAF7pTajsMdMZ-y7tsdl1tzbfERAHBCyAt8'
 
+bruna = '<a href="tg://user?id=187889867">Bruna</a>'
+matheuzinho = ' <a href="tg://user?id=305936221">Matheuzinho</a>'
+ale = ' <a href="tg://user?id=231851541">Ale</a>'
+duda = ' <a href="tg://user?id=215491130">Duda</a>'
+
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
     case message.text
@@ -22,8 +27,8 @@ Telegram::Bot::Client.run(token) do |bot|
         bot.api.send_message(chat_id: message.chat.id, text: "E aí #{message.from.first_name}, beleza?")
 
       when '/all'
-        bot.api.send_message(chat_id: message.chat.id, parse_mode: "HTML", text: '<a href="tg://user?id=187889867">Bruna</a> <a href="tg://user?id=305936221">Matheuzinho</a> <a href="tg://user?id=231851541">Ale</a> 
-          <a href="tg://user?id=215491130">Duda</a>')
+        bot.api.send_message(chat_id: message.chat.id, parse_mode: "HTML", 
+          text: bruna + matheuzinho + ale + duda)
 
       when '/start'
         question = 'London is a capital of which country?'
