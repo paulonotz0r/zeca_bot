@@ -22,7 +22,7 @@ Telegram::Bot::Client.run(token) do |bot|
         bot.api.send_message(chat_id: message.chat.id, text: "E aí #{message.from.first_name}, beleza?")
 
       when '/all'
-        bot.api.send_message(chat_id: message.chat.id, text: "[Bruna](tg://user?id=187889867) [Matheuzinho](tg://user?id=305936221) [Ale](tg://user?id=231851541)", parse_mode: "Markdown")
+        bot.api.send_message(chat_id: message.chat.id, text: "[Bruna](tg://user?id=187889867)", parse_mode: "Markdown")  # [Matheuzinho](tg://user?id=305936221) [Ale](tg://user?id=231851541)
 
       when '/start'
         question = 'London is a capital of which country?'
