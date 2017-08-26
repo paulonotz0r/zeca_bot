@@ -22,8 +22,8 @@ Telegram::Bot::Client.run(token) do |bot|
         bot.api.send_message(chat_id: message.chat.id, text: "E aí #{message.from.first_name}, beleza?")
 
       when '/all'
-        bot.api.send_message(chat_id: message.chat.id, text: '<a href="tg://user?id=187889867">Bruna</a> <a href="tg://user?id=305936221">Matheuzinho</a> <a href="tg://user?id=231851541">Ale</a>
-         <a href="tg://user?id=215491130">Duda</a>', parse_mode: "HTML")
+        bot.api.send_message(chat_id: message.chat.id, parse_mode: "HTML", text: '<a href="tg://user?id=187889867">Bruna</a> <a href="tg://user?id=305936221">Matheuzinho</a> <a href="tg://user?id=231851541">Ale</a> 
+          <a href="tg://user?id=215491130">Duda</a>')
 
       when '/start'
         question = 'London is a capital of which country?'
