@@ -1,6 +1,6 @@
 require 'telegram/bot'
 
-token = ''
+token = '353888167:AAF7pTajsMdMZ-y7tsdl1tzbfERAHBCyAt8'
 
 bruna = '<a href="tg://user?id=187889867">Bruna</a>'
 matheuzinho = ' <a href="tg://user?id=305936221">Matheuzinho</a>'
